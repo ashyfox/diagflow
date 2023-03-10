@@ -20,16 +20,16 @@ import pytz
 from datetime import datetime
 
 def create_entity_type():
-    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "/Users/bill/Desktop/python/diagflow_create_enity/seminar-and-workshop-c0371351149b.json"
+    os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = "example.json"
 
 
-    project_id = "seminar-and-workshop"
+    project_id = ""
 
 
     api_endpoint = "us-central1-dialogflow.googleapis.com:443"
     client_options = {"api_endpoint": api_endpoint}
     client = dialogflowcx_v3.EntityTypesClient(client_options=client_options)
-    parent = "projects/seminar-and-workshop/locations/us-central1/agents/e6cd039c-7d0e-418b-b8dd-14d460263881"
+    parent = "projects/example.project/locations/us-central1/agents/example.agent.id"
     # Initialize request argument(s)
     df = dialogflowcx_v3.EntityType()
 
